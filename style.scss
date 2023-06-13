@@ -1,0 +1,195 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=PT+Sans&display=swap');
+
+
+//   font-family: 'Exo 2', sans-serif;
+// font-family: 'PT Sans', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 109px 100px 51px;
+    margin: auto;
+}
+
+@mixin h2fontStyle( $fontwidth,$fontsize)
+{
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fontsize;
+    line-height: 65px;
+    color: #363738;
+    max-width: $fontwidth;
+}
+
+@mixin h3fontStyle ($h3width)
+{
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363738;
+    max-width: $h3width;
+}
+
+@mixin pfontStyle($Pwidth)
+{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6C;
+    max-width: $Pwidth;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        h2{
+            @include h2fontStyle(610px,52px)
+        }
+        p{
+         @include pfontStyle(525px);
+            margin: 40px 0 40px;
+        }
+        b{
+            font-family: 'PT Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #363738;
+            margin-bottom: 10px;
+           padding: 10px 3px;
+            // border-bottom: 3px solid #FFCE50;
+            
+        }
+}
+
+.hero__wrapper{
+    display: flex;
+}
+
+.Поставщик-bottom__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 40px 125px 56px 80px;
+}
+
+.Поставщик-bottom__item{
+    margin: auto;
+    h3{
+       @include h3fontStyle(228px);
+        margin: 24px 0 16px;
+    }
+
+    p{
+        @include pfontStyle(466px)
+    }
+   
+}
+
+.Поставщик-bottom :nth-child(2){
+  border-right: 1px solid #D7D7DD;
+  border-left: 1px solid #D7D7DD;
+}
+
+.sphere__box__votes{
+    display: flex;
+}
+
+.sphere__text{
+ 
+    h2{
+        font-size: 48px;
+    }
+    p{
+        @include pfontStyle(667px);
+        // margin: 32px 0 40px;
+        // font-size: 16px;
+        // line-height: 24px;   ustozdan so'radim)
+    }
+}
+
+.sphere__box{
+    display: flex;
+    gap: 32px;
+    padding: 40px 0 48px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    max-width: 687px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    max-width: 687px;
+    h3{
+        @include h3fontStyle(256px);
+        margin-bottom:24px ;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+.form-control{
+    display: flex;
+    gap: 32px;
+}
+
+.votes{
+    width: 281px;
+    padding-bottom: 39px;
+    // border-bottom:  3px solid #FFCE50;
+    h3{
+        @include h3fontStyle(179px)
+    }
+    .votes__wrapper{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        strong{
+            font-size: 54px;
+            color: #363738;;
+        }
+        span{
+            @include h3fontStyle();
+            color:rgba(107, 107, 108, 1);
+        }
+    }
+
+    }
+
+    // .useful_section__wrappper{
+    //     background-image: url("/images/выгоднееbackgroundimg.png");
+    //     background-repeat: no-repeat;
+    //     background-position: right;
+    // }
+
+    .useful__box{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .useful__box__text{
+        h3{
+           
+            @include h3fontStyle();
+            margin-bottom: 16px;
+        }
+        p{
+            @include pfontStyle()
+        }
+    }
